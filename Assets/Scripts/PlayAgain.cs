@@ -6,10 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class PlayAgain : MonoBehaviour
 {
+
+    public string sceneName;
    
 
     public void playAgain()
     {
-        SceneManager.LoadScene("Title");
+        SceneManager.LoadScene(sceneName);
     }
 }
